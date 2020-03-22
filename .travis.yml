@@ -1,0 +1,16 @@
+language: minimal
+os: linux
+dist: bionic
+
+env:
+  global:
+    - IMAGE_NAME=jsloan117/telegraf
+
+notifications:
+  email: false
+
+jobs:
+  include:
+    - stage: build docker images
+      services: docker
+      script: .travis/build-test-push.sh

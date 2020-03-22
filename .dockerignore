@@ -1,0 +1,15 @@
+*.aes
+.cache/
+docs/
+.dockerignore
+*.enc
+.git/
+.gitignore
+*.yaml
+*.yml
+*.md
+site/
+.travis/
+.trivyignore
+.ssh
+LICENSE
