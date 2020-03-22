@@ -1,7 +1,8 @@
 FROM telegraf:1.13
-LABEL Name=telegraf maintainer="Jonathan Sloan"
+LABEL Name=telegraf Maintainer="Jonathan Sloan"
 
-RUN apt-get update && apt-get install -y --no-install-recommends hddtemp smartmontools apcupsd \
-    && rm -rf /var/lib/apt/lists/*
+RUN echo "*** installing packages ***" \
+    && apt-get update && apt-get install -y --no-install-recommends hddtemp smartmontools apcupsd \
+    && rm -rf /tmp/* /var/tmp/* /var/cache/apt/* /var/lib/apt/lists/*
 
 COPY VERSION .
