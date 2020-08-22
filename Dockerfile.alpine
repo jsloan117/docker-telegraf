@@ -1,8 +1,8 @@
-FROM telegraf:1.15
+FROM telegraf:1.15-alpine
 LABEL Name=telegraf Maintainer="Jonathan Sloan"
 
 RUN echo "*** installing packages ***" \
-    && apt-get update && apt-get install -y --no-install-recommends smartmontools apcupsd \
+    && apk --no-cache add -y smartmontools apcupsd \
     && rm -rf /tmp/* /var/tmp/* /var/cache/apt/* /var/lib/apt/lists/*
 
 COPY VERSION .
