@@ -21,4 +21,4 @@ jsloan117/telegraf
 
 ## Documentation
 
-Telegraf's full documentation is available [here](https://docs.influxdata.com/telegraf/v1.13/).
+Telegraf's full documentation is available [here](https://docs.influxdata.com/telegraf/v1.15/).
