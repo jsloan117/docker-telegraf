@@ -1,4 +1,4 @@
-FROM telegraf:1.15
+FROM telegraf:1.17
 LABEL Name=telegraf Maintainer="Jonathan Sloan"
 
 RUN echo "*** installing packages ***" \
